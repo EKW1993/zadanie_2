@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Kontakt
+{% endblock %}
+
+{% block content %}
+<h2 class="second">Kontakt</h2>
+<ul class="contact">
+    <li>email: ewit6a@interia.pl</li>
+    <li>telefon: 609582343</li>
+</ul>
+<form action="/mypage/contact" method="POST">
+    <h2 class="third">Wyślij wiadomość</h2>
+    <textarea class="input_1" name="comment" form="usrform"></textarea>
+    <input type="submit">
+</form>
+{% endblock %}
